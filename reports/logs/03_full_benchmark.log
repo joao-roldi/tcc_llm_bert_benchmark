@@ -1,0 +1,576 @@
+2026-01-22 13:36:55.815 | INFO     | __main__:<module>:14 - Project root: /Users/joaoroldi/Projects/tcc2
+2026-01-22 13:36:58.659 | INFO     | __main__:<module>:17 - CUDA disponível: False
+2026-01-22 13:36:58.663 | INFO     | __main__:<module>:15 - Modelos: 2
+2026-01-22 13:36:58.664 | INFO     | __main__:<module>:16 - Estratégias: 3
+2026-01-22 13:36:58.665 | INFO     | __main__:<module>:17 - Datasets: 2
+2026-01-22 13:36:58.665 | INFO     | __main__:<module>:18 - 
+Total de experimentos: 12
+2026-01-22 13:36:58.676 | INFO     | __main__:<module>:9 - Iniciando benchmark com 12 experimentos...
+
+2026-01-22 13:36:58.677 | INFO     | __main__:<module>:26 - 
+[Experimento 1/12] Pular: Qwen/Qwen2-1.5B-Instruct | zero_shot | fakebr (Já concluído)
+2026-01-22 13:36:58.678 | INFO     | __main__:<module>:26 - 
+[Experimento 2/12] Pular: Qwen/Qwen2-1.5B-Instruct | zero_shot | fakerecogna (Já concluído)
+2026-01-22 13:36:58.678 | INFO     | __main__:<module>:26 - 
+[Experimento 3/12] Pular: Qwen/Qwen2-1.5B-Instruct | few_shot | fakebr (Já concluído)
+2026-01-22 13:36:58.679 | INFO     | __main__:<module>:26 - 
+[Experimento 4/12] Pular: Qwen/Qwen2-1.5B-Instruct | few_shot | fakerecogna (Já concluído)
+2026-01-22 13:36:58.680 | INFO     | __main__:<module>:26 - 
+[Experimento 5/12] Pular: Qwen/Qwen2-1.5B-Instruct | chain_of_thought | fakebr (Já concluído)
+2026-01-22 13:36:58.680 | INFO     | __main__:<module>:26 - 
+[Experimento 6/12] Pular: Qwen/Qwen2-1.5B-Instruct | chain_of_thought | fakerecogna (Já concluído)
+2026-01-22 13:36:58.680 | INFO     | __main__:<module>:30 - 
+[Experimento 7/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakebr
+2026-01-22 13:36:58.681 | INFO     | __main__:<module>:34 - 
+[Experimento 7/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakebr
+2026-01-22 13:36:58.681 | INFO     | __main__:run_experiment:21 - 
+============================================================
+2026-01-22 13:36:58.681 | INFO     | __main__:run_experiment:22 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakebr
+2026-01-22 13:36:58.681 | INFO     | __main__:run_experiment:23 - ============================================================
+2026-01-22 13:36:58.681 | INFO     | __main__:run_experiment:27 - [1/4] Carregando dataset...
+2026-01-22 13:37:00.535 | INFO     | __main__:run_experiment:30 -       Amostras: 1000
+2026-01-22 13:37:00.536 | INFO     | __main__:run_experiment:33 - [2/4] Carregando modelo...
+2026-01-22 13:37:15.033 | INFO     | __main__:run_experiment:36 -       VRAM: 0.00 GB
+2026-01-22 13:37:15.033 | INFO     | __main__:run_experiment:39 - [3/4] Preparando prompts...
+2026-01-22 13:37:15.034 | INFO     | __main__:run_experiment:50 - [4/4] Executando inferência...
+2026-01-22 13:37:19.779 | ERROR    | __main__:run_experiment:92 - 
+❌ ERRO: probability tensor contains either `inf`, `nan` or element < 0
+2026-01-22 13:37:19.850 | INFO     | __main__:<module>:30 - 
+[Experimento 8/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakerecogna
+2026-01-22 13:37:19.851 | INFO     | __main__:<module>:34 - 
+[Experimento 8/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakerecogna
+2026-01-22 13:37:19.851 | INFO     | __main__:run_experiment:21 - 
+============================================================
+2026-01-22 13:37:19.851 | INFO     | __main__:run_experiment:22 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakerecogna
+2026-01-22 13:37:19.852 | INFO     | __main__:run_experiment:23 - ============================================================
+2026-01-22 13:37:19.852 | INFO     | __main__:run_experiment:27 - [1/4] Carregando dataset...
+2026-01-22 13:37:23.232 | INFO     | __main__:run_experiment:30 -       Amostras: 1000
+2026-01-22 13:37:23.233 | INFO     | __main__:run_experiment:33 - [2/4] Carregando modelo...
+2026-01-22 13:37:30.787 | INFO     | __main__:run_experiment:36 -       VRAM: 0.00 GB
+2026-01-22 13:37:30.788 | INFO     | __main__:run_experiment:39 - [3/4] Preparando prompts...
+2026-01-22 13:37:30.788 | INFO     | __main__:run_experiment:50 - [4/4] Executando inferência...
+2026-01-22 13:37:35.418 | ERROR    | __main__:run_experiment:92 - 
+❌ ERRO: probability tensor contains either `inf`, `nan` or element < 0
+2026-01-22 13:37:35.481 | INFO     | __main__:<module>:30 - 
+[Experimento 9/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakebr
+2026-01-22 13:37:35.481 | INFO     | __main__:<module>:34 - 
+[Experimento 9/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakebr
+2026-01-22 13:37:35.481 | INFO     | __main__:run_experiment:21 - 
+============================================================
+2026-01-22 13:37:35.481 | INFO     | __main__:run_experiment:22 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakebr
+2026-01-22 13:37:35.482 | INFO     | __main__:run_experiment:23 - ============================================================
+2026-01-22 13:37:35.482 | INFO     | __main__:run_experiment:27 - [1/4] Carregando dataset...
+2026-01-22 13:37:36.760 | INFO     | __main__:run_experiment:30 -       Amostras: 1000
+2026-01-22 13:37:36.761 | INFO     | __main__:run_experiment:33 - [2/4] Carregando modelo...
+2026-01-22 13:37:44.407 | INFO     | __main__:run_experiment:36 -       VRAM: 0.00 GB
+2026-01-22 13:37:44.408 | INFO     | __main__:run_experiment:39 - [3/4] Preparando prompts...
+2026-01-22 13:37:44.428 | INFO     | __main__:run_experiment:50 - [4/4] Executando inferência...
+2026-01-22 13:38:03.724 | ERROR    | __main__:run_experiment:92 - 
+❌ ERRO: probability tensor contains either `inf`, `nan` or element < 0
+2026-01-22 13:38:03.783 | INFO     | __main__:<module>:30 - 
+[Experimento 10/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakerecogna
+2026-01-22 13:38:03.783 | INFO     | __main__:<module>:34 - 
+[Experimento 10/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakerecogna
+2026-01-22 13:38:03.784 | INFO     | __main__:run_experiment:21 - 
+============================================================
+2026-01-22 13:38:03.784 | INFO     | __main__:run_experiment:22 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakerecogna
+2026-01-22 13:38:03.785 | INFO     | __main__:run_experiment:23 - ============================================================
+2026-01-22 13:38:03.785 | INFO     | __main__:run_experiment:27 - [1/4] Carregando dataset...
+2026-01-22 13:38:05.824 | INFO     | __main__:run_experiment:30 -       Amostras: 1000
+2026-01-22 13:38:05.825 | INFO     | __main__:run_experiment:33 - [2/4] Carregando modelo...
+2026-01-22 13:38:14.245 | INFO     | __main__:run_experiment:36 -       VRAM: 0.00 GB
+2026-01-22 13:38:14.246 | INFO     | __main__:run_experiment:39 - [3/4] Preparando prompts...
+2026-01-22 13:38:14.282 | INFO     | __main__:run_experiment:50 - [4/4] Executando inferência...
+2026-01-22 13:38:28.389 | ERROR    | __main__:run_experiment:92 - 
+❌ ERRO: probability tensor contains either `inf`, `nan` or element < 0
+2026-01-22 13:38:28.455 | INFO     | __main__:<module>:30 - 
+[Experimento 11/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | chain_of_thought | fakebr
+2026-01-22 13:38:28.456 | INFO     | __main__:<module>:34 - 
+[Experimento 11/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | chain_of_thought | fakebr
+2026-01-22 13:38:28.456 | INFO     | __main__:run_experiment:21 - 
+============================================================
+2026-01-22 13:38:28.457 | INFO     | __main__:run_experiment:22 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | chain_of_thought | fakebr
+2026-01-22 13:38:28.457 | INFO     | __main__:run_experiment:23 - ============================================================
+2026-01-22 13:38:28.457 | INFO     | __main__:run_experiment:27 - [1/4] Carregando dataset...
+2026-01-22 13:38:29.680 | INFO     | __main__:run_experiment:30 -       Amostras: 1000
+2026-01-22 13:38:29.681 | INFO     | __main__:run_experiment:33 - [2/4] Carregando modelo...
+2026-01-22 13:38:37.852 | INFO     | __main__:run_experiment:36 -       VRAM: 0.00 GB
+2026-01-22 13:38:37.853 | INFO     | __main__:run_experiment:39 - [3/4] Preparando prompts...
+2026-01-22 13:38:37.854 | INFO     | __main__:run_experiment:50 - [4/4] Executando inferência...
+2026-01-22 13:38:42.959 | ERROR    | __main__:run_experiment:92 - 
+❌ ERRO: probability tensor contains either `inf`, `nan` or element < 0
+2026-01-22 13:38:43.009 | INFO     | __main__:<module>:30 - 
+[Experimento 12/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | chain_of_thought | fakerecogna
+2026-01-22 13:38:43.009 | INFO     | __main__:<module>:34 - 
+[Experimento 12/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | chain_of_thought | fakerecogna
+2026-01-22 13:38:43.010 | INFO     | __main__:run_experiment:21 - 
+============================================================
+2026-01-22 13:38:43.010 | INFO     | __main__:run_experiment:22 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | chain_of_thought | fakerecogna
+2026-01-22 13:38:43.010 | INFO     | __main__:run_experiment:23 - ============================================================
+2026-01-22 13:38:43.011 | INFO     | __main__:run_experiment:27 - [1/4] Carregando dataset...
+2026-01-22 13:38:46.025 | INFO     | __main__:run_experiment:30 -       Amostras: 1000
+2026-01-22 13:38:46.025 | INFO     | __main__:run_experiment:33 - [2/4] Carregando modelo...
+2026-01-22 13:38:54.404 | INFO     | __main__:run_experiment:36 -       VRAM: 0.00 GB
+2026-01-22 13:38:54.405 | INFO     | __main__:run_experiment:39 - [3/4] Preparando prompts...
+2026-01-22 13:38:54.405 | INFO     | __main__:run_experiment:50 - [4/4] Executando inferência...
+2026-01-22 13:38:59.196 | ERROR    | __main__:run_experiment:92 - 
+❌ ERRO: probability tensor contains either `inf`, `nan` or element < 0
+2026-01-22 13:38:59.260 | INFO     | __main__:<module>:50 - 
+============================================================
+2026-01-22 13:38:59.260 | INFO     | __main__:<module>:51 - ✅ Benchmark concluído!
+2026-01-22 13:38:59.261 | INFO     | __main__:<module>:52 - ============================================================
+2026-01-22 14:09:48.192 | INFO     | __main__:<module>:14 - Project root: /Users/joaoroldi/Projects/tcc2
+2026-01-22 14:09:51.057 | INFO     | __main__:<module>:17 - CUDA disponível: False
+2026-01-22 14:09:51.062 | INFO     | __main__:<module>:15 - Modelos: 2
+2026-01-22 14:09:51.063 | INFO     | __main__:<module>:16 - Estratégias: 3
+2026-01-22 14:09:51.063 | INFO     | __main__:<module>:17 - Datasets: 2
+2026-01-22 14:09:51.064 | INFO     | __main__:<module>:18 - 
+Total de experimentos: 12
+2026-01-22 14:09:51.074 | INFO     | __main__:<module>:9 - Iniciando benchmark com 12 experimentos...
+
+2026-01-22 14:09:51.075 | INFO     | __main__:<module>:26 - 
+[Experimento 1/12] Pular: Qwen/Qwen2-1.5B-Instruct | zero_shot | fakebr (Já concluído)
+2026-01-22 14:09:51.076 | INFO     | __main__:<module>:26 - 
+[Experimento 2/12] Pular: Qwen/Qwen2-1.5B-Instruct | zero_shot | fakerecogna (Já concluído)
+2026-01-22 14:09:51.077 | INFO     | __main__:<module>:26 - 
+[Experimento 3/12] Pular: Qwen/Qwen2-1.5B-Instruct | few_shot | fakebr (Já concluído)
+2026-01-22 14:09:51.078 | INFO     | __main__:<module>:26 - 
+[Experimento 4/12] Pular: Qwen/Qwen2-1.5B-Instruct | few_shot | fakerecogna (Já concluído)
+2026-01-22 14:09:51.079 | INFO     | __main__:<module>:26 - 
+[Experimento 5/12] Pular: Qwen/Qwen2-1.5B-Instruct | chain_of_thought | fakebr (Já concluído)
+2026-01-22 14:09:51.083 | INFO     | __main__:<module>:26 - 
+[Experimento 6/12] Pular: Qwen/Qwen2-1.5B-Instruct | chain_of_thought | fakerecogna (Já concluído)
+2026-01-22 14:09:51.083 | INFO     | __main__:<module>:30 - 
+[Experimento 7/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakebr
+2026-01-22 14:09:51.084 | INFO     | __main__:<module>:34 - 
+[Experimento 7/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakebr
+2026-01-22 14:09:51.084 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakebr
+2026-01-22 14:09:51.084 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-22 14:09:51.084 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: Fake.Br Corpus
+2026-01-22 14:09:52.808 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 7200 amostras
+2026-01-22 14:09:52.811 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-22 14:09:52.812 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-22 14:09:52.812 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-22 14:09:55.226 | ERROR    | __main__:run_experiment:90 - 
+❌ ERRO: Invalid buffer size: 13.55 GiB
+2026-01-22 14:09:55.264 | INFO     | __main__:<module>:30 - 
+[Experimento 8/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakerecogna
+2026-01-22 14:09:55.264 | INFO     | __main__:<module>:34 - 
+[Experimento 8/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakerecogna
+2026-01-22 14:09:55.265 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakerecogna
+2026-01-22 14:09:55.265 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-22 14:09:55.265 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: FakeRecogna
+2026-01-22 14:09:59.779 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 52800 amostras
+2026-01-22 14:09:59.789 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-22 14:09:59.789 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-22 14:09:59.789 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-22 14:10:02.311 | ERROR    | __main__:run_experiment:90 - 
+❌ ERRO: Invalid buffer size: 13.90 GiB
+2026-01-22 14:10:02.352 | INFO     | __main__:<module>:30 - 
+[Experimento 9/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakebr
+2026-01-22 14:10:02.352 | INFO     | __main__:<module>:34 - 
+[Experimento 9/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakebr
+2026-01-22 14:10:02.352 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakebr
+2026-01-22 14:10:02.353 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-22 14:10:02.354 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: Fake.Br Corpus
+2026-01-22 14:10:03.629 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 7200 amostras
+2026-01-22 14:10:03.633 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-22 14:10:03.633 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-22 14:10:03.634 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-22 14:10:06.091 | ERROR    | __main__:run_experiment:90 - 
+❌ ERRO: Invalid buffer size: 14.26 GiB
+2026-01-22 14:10:06.125 | INFO     | __main__:<module>:30 - 
+[Experimento 10/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakerecogna
+2026-01-22 14:10:06.126 | INFO     | __main__:<module>:34 - 
+[Experimento 10/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakerecogna
+2026-01-22 14:10:06.126 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakerecogna
+2026-01-22 14:10:06.127 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-22 14:10:06.127 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: FakeRecogna
+2026-01-22 14:10:08.153 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 52800 amostras
+2026-01-22 14:10:08.162 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-22 14:10:08.162 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-22 14:10:08.163 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-22 14:10:10.161 | ERROR    | __main__:run_experiment:90 - 
+❌ ERRO: Invalid buffer size: 14.26 GiB
+2026-01-22 14:10:10.195 | INFO     | __main__:<module>:30 - 
+[Experimento 11/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | chain_of_thought | fakebr
+2026-01-22 14:10:10.196 | INFO     | __main__:<module>:34 - 
+[Experimento 11/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | chain_of_thought | fakebr
+2026-01-22 14:10:10.196 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | chain_of_thought | fakebr
+2026-01-22 14:10:10.196 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-22 14:10:10.197 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: Fake.Br Corpus
+2026-01-22 14:10:11.258 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 7200 amostras
+2026-01-22 14:10:11.262 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-22 14:10:11.262 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-22 14:10:11.263 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-22 14:10:13.154 | ERROR    | __main__:run_experiment:90 - 
+❌ ERRO: Invalid buffer size: 13.90 GiB
+2026-01-22 14:10:13.189 | INFO     | __main__:<module>:30 - 
+[Experimento 12/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | chain_of_thought | fakerecogna
+2026-01-22 14:10:13.189 | INFO     | __main__:<module>:34 - 
+[Experimento 12/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | chain_of_thought | fakerecogna
+2026-01-22 14:10:13.189 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | chain_of_thought | fakerecogna
+2026-01-22 14:10:13.190 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-22 14:10:13.190 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: FakeRecogna
+2026-01-22 14:10:14.739 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 52800 amostras
+2026-01-22 14:10:14.748 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-22 14:10:14.749 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-22 14:10:14.749 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-22 14:10:16.626 | ERROR    | __main__:run_experiment:90 - 
+❌ ERRO: Invalid buffer size: 14.26 GiB
+2026-01-22 14:10:16.666 | INFO     | __main__:<module>:50 - ✅ Benchmark concluído!
+2026-01-22 16:57:59.918 | INFO     | __main__:<module>:14 - Project root: /Users/joaoroldi/Projects/tcc2
+2026-01-22 16:58:02.607 | INFO     | __main__:<module>:17 - CUDA disponível: False
+2026-01-22 16:58:02.618 | INFO     | __main__:<module>:18 - MPS (Mac) disponível: True
+2026-01-22 16:58:02.619 | INFO     | __main__:<module>:24 - Usando Apple Silicon GPU (MPS)
+2026-01-22 16:58:02.624 | INFO     | __main__:<module>:15 - Modelos: 2
+2026-01-22 16:58:02.626 | INFO     | __main__:<module>:16 - Estratégias: 3
+2026-01-22 16:58:02.627 | INFO     | __main__:<module>:17 - Datasets: 2
+2026-01-22 16:58:02.628 | INFO     | __main__:<module>:18 - 
+Total de experimentos: 12
+2026-01-22 16:58:02.638 | INFO     | __main__:<module>:9 - Iniciando benchmark com 12 experimentos...
+
+2026-01-22 16:58:02.639 | INFO     | __main__:<module>:26 - 
+[Experimento 1/12] Pular: Qwen/Qwen2-1.5B-Instruct | zero_shot | fakebr (Já concluído)
+2026-01-22 16:58:02.639 | INFO     | __main__:<module>:26 - 
+[Experimento 2/12] Pular: Qwen/Qwen2-1.5B-Instruct | zero_shot | fakerecogna (Já concluído)
+2026-01-22 16:58:02.640 | INFO     | __main__:<module>:26 - 
+[Experimento 3/12] Pular: Qwen/Qwen2-1.5B-Instruct | few_shot | fakebr (Já concluído)
+2026-01-22 16:58:02.641 | INFO     | __main__:<module>:26 - 
+[Experimento 4/12] Pular: Qwen/Qwen2-1.5B-Instruct | few_shot | fakerecogna (Já concluído)
+2026-01-22 16:58:02.642 | INFO     | __main__:<module>:26 - 
+[Experimento 5/12] Pular: Qwen/Qwen2-1.5B-Instruct | chain_of_thought | fakebr (Já concluído)
+2026-01-22 16:58:02.644 | INFO     | __main__:<module>:26 - 
+[Experimento 6/12] Pular: Qwen/Qwen2-1.5B-Instruct | chain_of_thought | fakerecogna (Já concluído)
+2026-01-22 16:58:02.644 | INFO     | __main__:<module>:30 - 
+[Experimento 7/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakebr
+2026-01-22 16:58:02.644 | INFO     | __main__:<module>:34 - 
+[Experimento 7/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakebr
+2026-01-22 16:58:02.644 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakebr
+2026-01-22 16:58:02.645 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-22 16:58:02.645 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: Fake.Br Corpus
+2026-01-22 16:58:04.553 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 7200 amostras
+2026-01-22 16:58:04.557 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-22 16:58:04.557 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-22 16:58:04.557 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-22 16:58:19.756 | INFO     | models.model_handler:_load_model:124 - Modelo carregado com sucesso!
+2026-01-22 16:58:19.757 | INFO     | __main__:run_experiment:34 -       VRAM: 0.00 GB
+2026-01-22 16:58:19.758 | INFO     | __main__:run_experiment:37 - [3/4] Preparando prompts...
+2026-01-22 16:58:19.758 | INFO     | __main__:run_experiment:48 - [4/4] Executando inferência...
+2026-01-22 16:58:28.428 | ERROR    | __main__:run_experiment:90 - 
+❌ ERRO: probability tensor contains either `inf`, `nan` or element < 0
+2026-01-22 16:58:28.492 | INFO     | __main__:<module>:30 - 
+[Experimento 8/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakerecogna
+2026-01-22 16:58:28.493 | INFO     | __main__:<module>:34 - 
+[Experimento 8/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakerecogna
+2026-01-22 16:58:28.493 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakerecogna
+2026-01-22 16:58:28.493 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-22 16:58:28.494 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: FakeRecogna
+2026-01-22 16:58:32.381 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 52800 amostras
+2026-01-22 16:58:32.402 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-22 16:58:32.402 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-22 16:58:32.402 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-22 17:00:19.492 | INFO     | __main__:<module>:14 - Project root: /Users/joaoroldi/Projects/tcc2
+2026-01-22 17:00:22.386 | INFO     | __main__:<module>:17 - CUDA disponível: False
+2026-01-22 17:00:22.407 | INFO     | __main__:<module>:18 - MPS (Mac) disponível: True
+2026-01-22 17:00:22.408 | INFO     | __main__:<module>:24 - Usando Apple Silicon GPU (MPS)
+2026-01-22 17:00:22.415 | INFO     | __main__:<module>:15 - Modelos: 2
+2026-01-22 17:00:22.416 | INFO     | __main__:<module>:16 - Estratégias: 3
+2026-01-22 17:00:22.416 | INFO     | __main__:<module>:17 - Datasets: 2
+2026-01-22 17:00:22.417 | INFO     | __main__:<module>:18 - Total de experimentos: 12
+2026-01-22 17:00:22.440 | INFO     | __main__:<module>:9 - Iniciando benchmark com 12 experimentos...
+
+2026-01-22 17:00:22.444 | INFO     | __main__:<module>:26 - [Experimento 1/12] Pular: Qwen/Qwen2-1.5B-Instruct | zero_shot | fakebr (Já concluído)
+2026-01-22 17:00:22.446 | INFO     | __main__:<module>:26 - [Experimento 2/12] Pular: Qwen/Qwen2-1.5B-Instruct | zero_shot | fakerecogna (Já concluído)
+2026-01-22 17:00:22.447 | INFO     | __main__:<module>:26 - [Experimento 3/12] Pular: Qwen/Qwen2-1.5B-Instruct | few_shot | fakebr (Já concluído)
+2026-01-22 17:00:22.448 | INFO     | __main__:<module>:26 - [Experimento 4/12] Pular: Qwen/Qwen2-1.5B-Instruct | few_shot | fakerecogna (Já concluído)
+2026-01-22 17:00:22.450 | INFO     | __main__:<module>:26 - [Experimento 5/12] Pular: Qwen/Qwen2-1.5B-Instruct | chain_of_thought | fakebr (Já concluído)
+2026-01-22 17:00:22.451 | INFO     | __main__:<module>:26 - [Experimento 6/12] Pular: Qwen/Qwen2-1.5B-Instruct | chain_of_thought | fakerecogna (Já concluído)
+2026-01-22 17:00:22.453 | INFO     | __main__:<module>:30 - [Experimento 7/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakebr
+2026-01-22 17:00:22.453 | INFO     | __main__:<module>:34 - [Experimento 7/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakebr
+2026-01-22 17:00:22.454 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakebr
+2026-01-22 17:00:22.455 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-22 17:00:22.457 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: Fake.Br Corpus
+2026-01-22 17:00:23.821 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 7200 amostras
+2026-01-22 17:00:23.826 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-22 17:00:23.826 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-22 17:00:23.826 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-22 17:00:33.573 | INFO     | models.model_handler:_load_model:124 - Modelo carregado com sucesso!
+2026-01-22 17:00:33.574 | INFO     | __main__:run_experiment:34 -       VRAM: 0.00 GB
+2026-01-22 17:00:33.575 | INFO     | __main__:run_experiment:37 - [3/4] Preparando prompts...
+2026-01-22 17:00:33.575 | INFO     | __main__:run_experiment:48 - [4/4] Executando inferência...
+2026-01-22 17:00:34.431 | ERROR    | __main__:run_experiment:90 - ❌ ERRO: probability tensor contains either `inf`, `nan` or element < 0
+2026-01-22 17:00:34.509 | INFO     | __main__:<module>:30 - [Experimento 8/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakerecogna
+2026-01-22 17:00:34.510 | INFO     | __main__:<module>:34 - [Experimento 8/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakerecogna
+2026-01-22 17:00:34.510 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakerecogna
+2026-01-22 17:00:34.511 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-22 17:00:34.512 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: FakeRecogna
+2026-01-22 17:00:37.478 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 52800 amostras
+2026-01-22 17:00:37.507 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-22 17:00:37.508 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-22 17:00:37.509 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-22 17:00:50.633 | INFO     | models.model_handler:_load_model:124 - Modelo carregado com sucesso!
+2026-01-22 17:00:50.635 | INFO     | __main__:run_experiment:34 -       VRAM: 0.00 GB
+2026-01-22 17:00:50.636 | INFO     | __main__:run_experiment:37 - [3/4] Preparando prompts...
+2026-01-22 17:00:50.636 | INFO     | __main__:run_experiment:48 - [4/4] Executando inferência...
+2026-01-22 17:00:51.943 | ERROR    | __main__:run_experiment:90 - ❌ ERRO: probability tensor contains either `inf`, `nan` or element < 0
+2026-01-22 17:00:52.005 | INFO     | __main__:<module>:30 - [Experimento 9/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakebr
+2026-01-22 17:00:52.005 | INFO     | __main__:<module>:34 - [Experimento 9/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakebr
+2026-01-22 17:00:52.006 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakebr
+2026-01-22 17:00:52.006 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-22 17:00:52.007 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: Fake.Br Corpus
+2026-01-22 17:00:53.007 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 7200 amostras
+2026-01-22 17:00:53.011 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-22 17:00:53.011 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-22 17:00:53.012 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-22 17:03:01.926 | INFO     | models.model_handler:_load_model:124 - Modelo carregado com sucesso!
+2026-01-22 17:03:01.932 | INFO     | __main__:run_experiment:34 -       VRAM: 0.00 GB
+2026-01-22 17:03:01.933 | INFO     | __main__:run_experiment:37 - [3/4] Preparando prompts...
+2026-01-22 17:03:02.466 | INFO     | __main__:run_experiment:48 - [4/4] Executando inferência...
+2026-01-22 17:03:21.891 | ERROR    | __main__:run_experiment:90 - ❌ ERRO: probability tensor contains either `inf`, `nan` or element < 0
+2026-01-22 17:03:22.194 | INFO     | __main__:<module>:30 - [Experimento 10/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakerecogna
+2026-01-22 17:03:22.194 | INFO     | __main__:<module>:34 - [Experimento 10/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakerecogna
+2026-01-22 17:03:22.195 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakerecogna
+2026-01-22 17:03:22.196 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-22 17:03:22.196 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: FakeRecogna
+2026-01-22 17:03:24.692 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 52800 amostras
+2026-01-22 17:03:24.716 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-22 17:03:24.717 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-22 17:03:24.718 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-22 17:03:45.447 | INFO     | models.model_handler:_load_model:124 - Modelo carregado com sucesso!
+2026-01-22 17:03:45.449 | INFO     | __main__:run_experiment:34 -       VRAM: 0.00 GB
+2026-01-22 17:03:45.449 | INFO     | __main__:run_experiment:37 - [3/4] Preparando prompts...
+2026-01-22 17:03:45.501 | INFO     | __main__:run_experiment:48 - [4/4] Executando inferência...
+2026-01-22 17:18:28.387 | INFO     | __main__:<module>:14 - Project root: /Users/joaoroldi/Projects/tcc2
+2026-01-22 17:18:31.342 | INFO     | __main__:<module>:17 - CUDA disponível: False
+2026-01-22 17:18:31.353 | INFO     | __main__:<module>:18 - MPS (Mac) disponível: True
+2026-01-22 17:18:31.353 | INFO     | __main__:<module>:24 - Usando Apple Silicon GPU (MPS)
+2026-01-22 17:18:31.361 | INFO     | __main__:<module>:15 - Modelos: 2
+2026-01-22 17:18:31.362 | INFO     | __main__:<module>:16 - Estratégias: 3
+2026-01-22 17:18:31.362 | INFO     | __main__:<module>:17 - Datasets: 2
+2026-01-22 17:18:31.363 | INFO     | __main__:<module>:18 - Total de experimentos: 12
+2026-01-22 17:18:31.392 | INFO     | __main__:<module>:9 - Iniciando benchmark com 12 experimentos...
+2026-01-22 17:18:31.395 | INFO     | __main__:<module>:26 - [Experimento 1/12] Pular: Qwen/Qwen2-1.5B-Instruct | zero_shot | fakebr (Já concluído)
+2026-01-22 17:18:31.398 | INFO     | __main__:<module>:26 - [Experimento 2/12] Pular: Qwen/Qwen2-1.5B-Instruct | zero_shot | fakerecogna (Já concluído)
+2026-01-22 17:18:31.400 | INFO     | __main__:<module>:26 - [Experimento 3/12] Pular: Qwen/Qwen2-1.5B-Instruct | few_shot | fakebr (Já concluído)
+2026-01-22 17:18:31.401 | INFO     | __main__:<module>:26 - [Experimento 4/12] Pular: Qwen/Qwen2-1.5B-Instruct | few_shot | fakerecogna (Já concluído)
+2026-01-22 17:18:31.402 | INFO     | __main__:<module>:26 - [Experimento 5/12] Pular: Qwen/Qwen2-1.5B-Instruct | chain_of_thought | fakebr (Já concluído)
+2026-01-22 17:18:31.404 | INFO     | __main__:<module>:26 - [Experimento 6/12] Pular: Qwen/Qwen2-1.5B-Instruct | chain_of_thought | fakerecogna (Já concluído)
+2026-01-22 17:18:31.405 | INFO     | __main__:<module>:30 - [Experimento 7/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakebr
+2026-01-22 17:18:31.406 | INFO     | __main__:<module>:34 - [Experimento 7/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakebr
+2026-01-22 17:18:31.407 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakebr
+2026-01-22 17:18:31.408 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-22 17:18:31.409 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: Fake.Br Corpus
+2026-01-22 17:18:32.919 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 7200 amostras
+2026-01-22 17:18:32.924 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-22 17:18:32.924 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-22 17:18:32.925 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-22 17:18:44.810 | INFO     | models.model_handler:_load_model:147 - Modelo carregado com sucesso!
+2026-01-22 17:18:44.812 | INFO     | __main__:run_experiment:34 -       VRAM: 0.00 GB
+2026-01-22 17:18:44.812 | INFO     | __main__:run_experiment:37 - [3/4] Preparando prompts...
+2026-01-22 17:18:44.812 | INFO     | __main__:run_experiment:48 - [4/4] Executando inferência...
+2026-01-22 17:18:45.579 | ERROR    | __main__:run_experiment:90 - ❌ ERRO: probability tensor contains either `inf`, `nan` or element < 0
+2026-01-22 17:18:45.639 | INFO     | __main__:<module>:30 - [Experimento 8/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakerecogna
+2026-01-22 17:18:45.639 | INFO     | __main__:<module>:34 - [Experimento 8/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakerecogna
+2026-01-22 17:18:45.639 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakerecogna
+2026-01-22 17:18:45.640 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-22 17:18:45.640 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: FakeRecogna
+2026-01-22 17:18:49.373 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 52800 amostras
+2026-01-22 17:18:49.389 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-22 17:18:49.390 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-22 17:18:49.390 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-22 17:18:57.486 | INFO     | models.model_handler:_load_model:147 - Modelo carregado com sucesso!
+2026-01-22 17:18:57.487 | INFO     | __main__:run_experiment:34 -       VRAM: 0.00 GB
+2026-01-22 17:18:57.487 | INFO     | __main__:run_experiment:37 - [3/4] Preparando prompts...
+2026-01-22 17:18:57.488 | INFO     | __main__:run_experiment:48 - [4/4] Executando inferência...
+2026-01-22 17:18:58.089 | ERROR    | __main__:run_experiment:90 - ❌ ERRO: probability tensor contains either `inf`, `nan` or element < 0
+2026-01-22 17:18:58.149 | INFO     | __main__:<module>:30 - [Experimento 9/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakebr
+2026-01-22 17:18:58.149 | INFO     | __main__:<module>:34 - [Experimento 9/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakebr
+2026-01-22 17:18:58.150 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakebr
+2026-01-22 17:18:58.150 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-22 17:18:58.151 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: Fake.Br Corpus
+2026-01-22 17:18:59.217 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 7200 amostras
+2026-01-22 17:18:59.222 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-22 17:18:59.222 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-22 17:18:59.222 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-22 17:19:07.231 | INFO     | models.model_handler:_load_model:147 - Modelo carregado com sucesso!
+2026-01-22 17:19:07.232 | INFO     | __main__:run_experiment:34 -       VRAM: 0.00 GB
+2026-01-22 17:19:07.232 | INFO     | __main__:run_experiment:37 - [3/4] Preparando prompts...
+2026-01-22 17:19:07.250 | INFO     | __main__:run_experiment:48 - [4/4] Executando inferência...
+2026-01-22 17:19:11.950 | ERROR    | __main__:run_experiment:90 - ❌ ERRO: probability tensor contains either `inf`, `nan` or element < 0
+2026-01-22 17:19:12.143 | INFO     | __main__:<module>:30 - [Experimento 10/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakerecogna
+2026-01-22 17:19:12.143 | INFO     | __main__:<module>:34 - [Experimento 10/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakerecogna
+2026-01-22 17:19:12.144 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakerecogna
+2026-01-22 17:19:12.144 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-22 17:19:12.144 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: FakeRecogna
+2026-01-22 17:19:14.369 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 52800 amostras
+2026-01-22 17:19:14.391 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-22 17:19:14.392 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-22 17:19:14.393 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-22 17:19:31.148 | INFO     | models.model_handler:_load_model:147 - Modelo carregado com sucesso!
+2026-01-22 17:19:31.149 | INFO     | __main__:run_experiment:34 -       VRAM: 0.00 GB
+2026-01-22 17:19:31.150 | INFO     | __main__:run_experiment:37 - [3/4] Preparando prompts...
+2026-01-22 17:19:31.184 | INFO     | __main__:run_experiment:48 - [4/4] Executando inferência...
+2026-01-22 17:19:32.429 | ERROR    | __main__:run_experiment:90 - ❌ ERRO: probability tensor contains either `inf`, `nan` or element < 0
+2026-01-22 17:19:32.488 | INFO     | __main__:<module>:30 - [Experimento 11/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | chain_of_thought | fakebr
+2026-01-22 17:19:32.489 | INFO     | __main__:<module>:34 - [Experimento 11/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | chain_of_thought | fakebr
+2026-01-22 17:19:32.489 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | chain_of_thought | fakebr
+2026-01-22 17:19:32.489 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-22 17:19:32.490 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: Fake.Br Corpus
+2026-01-22 17:19:33.508 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 7200 amostras
+2026-01-22 17:19:33.514 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-22 17:19:33.515 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-22 17:19:33.515 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-22 17:19:44.625 | INFO     | models.model_handler:_load_model:147 - Modelo carregado com sucesso!
+2026-01-22 17:19:44.625 | INFO     | __main__:run_experiment:34 -       VRAM: 0.00 GB
+2026-01-22 17:19:44.626 | INFO     | __main__:run_experiment:37 - [3/4] Preparando prompts...
+2026-01-22 17:19:44.626 | INFO     | __main__:run_experiment:48 - [4/4] Executando inferência...
+2026-01-22 17:19:46.547 | ERROR    | __main__:run_experiment:90 - ❌ ERRO: probability tensor contains either `inf`, `nan` or element < 0
+2026-01-22 17:19:46.610 | INFO     | __main__:<module>:30 - [Experimento 12/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | chain_of_thought | fakerecogna
+2026-01-22 17:19:46.611 | INFO     | __main__:<module>:34 - [Experimento 12/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | chain_of_thought | fakerecogna
+2026-01-22 17:19:46.611 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | chain_of_thought | fakerecogna
+2026-01-22 17:19:46.611 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-22 17:19:46.612 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: FakeRecogna
+2026-01-22 17:19:48.730 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 52800 amostras
+2026-01-22 17:19:48.741 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-22 17:19:48.742 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-22 17:19:48.742 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-22 17:20:08.021 | INFO     | models.model_handler:_load_model:147 - Modelo carregado com sucesso!
+2026-01-22 17:20:08.027 | INFO     | __main__:run_experiment:34 -       VRAM: 0.00 GB
+2026-01-22 17:20:08.028 | INFO     | __main__:run_experiment:37 - [3/4] Preparando prompts...
+2026-01-22 17:20:08.029 | INFO     | __main__:run_experiment:48 - [4/4] Executando inferência...
+2026-01-22 17:20:18.104 | ERROR    | __main__:run_experiment:90 - ❌ ERRO: probability tensor contains either `inf`, `nan` or element < 0
+2026-01-22 17:20:18.528 | INFO     | __main__:<module>:50 - ✅ Benchmark concluído!
+2026-01-22 17:25:19.250 | INFO     | __main__:<module>:14 - Project root: /Users/joaoroldi/Projects/tcc2
+2026-01-22 17:25:22.194 | INFO     | __main__:<module>:17 - CUDA disponível: False
+2026-01-22 17:25:22.211 | INFO     | __main__:<module>:18 - MPS (Mac) disponível: True
+2026-01-22 17:25:22.211 | INFO     | __main__:<module>:24 - Usando Apple Silicon GPU (MPS)
+2026-01-22 17:25:22.219 | INFO     | __main__:<module>:15 - Modelos: 2
+2026-01-22 17:25:22.219 | INFO     | __main__:<module>:16 - Estratégias: 3
+2026-01-22 17:25:22.220 | INFO     | __main__:<module>:17 - Datasets: 2
+2026-01-22 17:25:22.220 | INFO     | __main__:<module>:18 - Total de experimentos: 12
+2026-01-22 17:25:22.237 | INFO     | __main__:<module>:9 - Iniciando benchmark com 12 experimentos...
+2026-01-22 17:25:22.238 | INFO     | __main__:<module>:26 - [Experimento 1/12] Pular: Qwen/Qwen2-1.5B-Instruct | zero_shot | fakebr (Já concluído)
+2026-01-22 17:25:22.239 | INFO     | __main__:<module>:26 - [Experimento 2/12] Pular: Qwen/Qwen2-1.5B-Instruct | zero_shot | fakerecogna (Já concluído)
+2026-01-22 17:25:22.240 | INFO     | __main__:<module>:26 - [Experimento 3/12] Pular: Qwen/Qwen2-1.5B-Instruct | few_shot | fakebr (Já concluído)
+2026-01-22 17:25:22.240 | INFO     | __main__:<module>:26 - [Experimento 4/12] Pular: Qwen/Qwen2-1.5B-Instruct | few_shot | fakerecogna (Já concluído)
+2026-01-22 17:25:22.241 | INFO     | __main__:<module>:26 - [Experimento 5/12] Pular: Qwen/Qwen2-1.5B-Instruct | chain_of_thought | fakebr (Já concluído)
+2026-01-22 17:25:22.242 | INFO     | __main__:<module>:26 - [Experimento 6/12] Pular: Qwen/Qwen2-1.5B-Instruct | chain_of_thought | fakerecogna (Já concluído)
+2026-01-22 17:25:22.243 | INFO     | __main__:<module>:30 - [Experimento 7/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakebr
+2026-01-22 17:25:22.243 | INFO     | __main__:<module>:34 - [Experimento 7/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakebr
+2026-01-22 17:25:22.243 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakebr
+2026-01-22 17:25:22.243 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-22 17:25:22.243 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: Fake.Br Corpus
+2026-01-22 17:25:24.410 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 7200 amostras
+2026-01-22 17:25:24.415 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-22 17:25:24.415 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-22 17:25:24.416 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-22 17:25:26.174 | ERROR    | __main__:run_experiment:90 - ❌ ERRO: Invalid buffer size: 12.85 GiB
+2026-01-22 17:25:26.213 | INFO     | __main__:<module>:30 - [Experimento 8/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakerecogna
+2026-01-22 17:25:26.214 | INFO     | __main__:<module>:34 - [Experimento 8/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakerecogna
+2026-01-22 17:25:26.214 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakerecogna
+2026-01-22 17:25:26.214 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-22 17:25:26.215 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: FakeRecogna
+2026-01-22 17:25:28.958 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 52800 amostras
+2026-01-22 17:25:28.966 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-22 17:25:28.967 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-22 17:25:28.967 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-22 17:25:30.630 | ERROR    | __main__:run_experiment:90 - ❌ ERRO: Invalid buffer size: 12.50 GiB
+2026-01-22 17:25:30.672 | INFO     | __main__:<module>:30 - [Experimento 9/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakebr
+2026-01-22 17:25:30.672 | INFO     | __main__:<module>:34 - [Experimento 9/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakebr
+2026-01-22 17:25:30.672 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakebr
+2026-01-22 17:25:30.673 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-22 17:25:30.673 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: Fake.Br Corpus
+2026-01-22 17:25:31.220 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 7200 amostras
+2026-01-22 17:25:31.223 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-22 17:25:31.224 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-22 17:25:31.224 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-22 17:25:32.903 | ERROR    | __main__:run_experiment:90 - ❌ ERRO: Invalid buffer size: 12.50 GiB
+2026-01-22 17:25:32.933 | INFO     | __main__:<module>:30 - [Experimento 10/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakerecogna
+2026-01-22 17:25:32.934 | INFO     | __main__:<module>:34 - [Experimento 10/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakerecogna
+2026-01-22 17:25:32.934 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakerecogna
+2026-01-22 17:25:32.935 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-22 17:25:32.935 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: FakeRecogna
+2026-01-22 17:25:34.597 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 52800 amostras
+2026-01-22 17:25:34.606 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-22 17:25:34.606 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-22 17:25:34.607 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-22 17:25:36.276 | ERROR    | __main__:run_experiment:90 - ❌ ERRO: Invalid buffer size: 12.50 GiB
+2026-01-22 17:25:36.314 | INFO     | __main__:<module>:30 - [Experimento 11/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | chain_of_thought | fakebr
+2026-01-22 17:25:36.314 | INFO     | __main__:<module>:34 - [Experimento 11/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | chain_of_thought | fakebr
+2026-01-22 17:25:36.314 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | chain_of_thought | fakebr
+2026-01-22 17:25:36.314 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-22 17:25:36.315 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: Fake.Br Corpus
+2026-01-22 17:25:36.905 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 7200 amostras
+2026-01-22 17:25:36.909 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-22 17:25:36.909 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-22 17:25:36.910 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-22 17:25:38.602 | ERROR    | __main__:run_experiment:90 - ❌ ERRO: Invalid buffer size: 12.50 GiB
+2026-01-22 17:25:38.637 | INFO     | __main__:<module>:30 - [Experimento 12/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | chain_of_thought | fakerecogna
+2026-01-22 17:25:38.637 | INFO     | __main__:<module>:34 - [Experimento 12/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | chain_of_thought | fakerecogna
+2026-01-22 17:25:38.637 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | chain_of_thought | fakerecogna
+2026-01-22 17:25:38.638 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-22 17:25:38.638 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: FakeRecogna
+2026-01-22 17:25:39.921 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 52800 amostras
+2026-01-22 17:25:39.930 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-22 17:25:39.930 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-22 17:25:39.930 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-22 17:25:41.579 | ERROR    | __main__:run_experiment:90 - ❌ ERRO: Invalid buffer size: 12.50 GiB
+2026-01-22 17:25:41.615 | INFO     | __main__:<module>:50 - ✅ Benchmark concluído!
+2026-01-22 17:26:45.194 | INFO     | __main__:<module>:14 - Project root: /Users/joaoroldi/Projects/tcc2
+2026-01-22 17:26:47.052 | INFO     | __main__:<module>:17 - CUDA disponível: False
+2026-01-22 17:26:47.061 | INFO     | __main__:<module>:18 - MPS (Mac) disponível: True
+2026-01-22 17:26:47.061 | INFO     | __main__:<module>:24 - Usando Apple Silicon GPU (MPS)
+2026-01-22 17:26:47.070 | INFO     | __main__:<module>:15 - Modelos: 2
+2026-01-22 17:26:47.070 | INFO     | __main__:<module>:16 - Estratégias: 3
+2026-01-22 17:26:47.071 | INFO     | __main__:<module>:17 - Datasets: 2
+2026-01-22 17:26:47.071 | INFO     | __main__:<module>:18 - Total de experimentos: 12
+2026-01-22 17:26:47.088 | INFO     | __main__:<module>:9 - Iniciando benchmark com 12 experimentos...
+2026-01-22 17:26:47.089 | INFO     | __main__:<module>:26 - [Experimento 1/12] Pular: Qwen/Qwen2-1.5B-Instruct | zero_shot | fakebr (Já concluído)
+2026-01-22 17:26:47.089 | INFO     | __main__:<module>:26 - [Experimento 2/12] Pular: Qwen/Qwen2-1.5B-Instruct | zero_shot | fakerecogna (Já concluído)
+2026-01-22 17:26:47.090 | INFO     | __main__:<module>:26 - [Experimento 3/12] Pular: Qwen/Qwen2-1.5B-Instruct | few_shot | fakebr (Já concluído)
+2026-01-22 17:26:47.090 | INFO     | __main__:<module>:26 - [Experimento 4/12] Pular: Qwen/Qwen2-1.5B-Instruct | few_shot | fakerecogna (Já concluído)
+2026-01-22 17:26:47.091 | INFO     | __main__:<module>:26 - [Experimento 5/12] Pular: Qwen/Qwen2-1.5B-Instruct | chain_of_thought | fakebr (Já concluído)
+2026-01-22 17:26:47.091 | INFO     | __main__:<module>:26 - [Experimento 6/12] Pular: Qwen/Qwen2-1.5B-Instruct | chain_of_thought | fakerecogna (Já concluído)
+2026-01-22 17:26:47.092 | INFO     | __main__:<module>:30 - [Experimento 7/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakebr
+2026-01-22 17:26:47.092 | INFO     | __main__:<module>:34 - [Experimento 7/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakebr
+2026-01-22 17:26:47.092 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakebr
+2026-01-22 17:26:47.092 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-22 17:26:47.092 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: Fake.Br Corpus
+2026-01-22 17:26:49.068 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 7200 amostras
+2026-01-22 17:26:49.072 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-22 17:26:49.072 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-22 17:26:49.072 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-22 17:27:04.356 | INFO     | models.model_handler:_load_model:148 - Modelo carregado com sucesso!
+2026-01-22 17:27:04.360 | INFO     | __main__:run_experiment:34 -       VRAM: 0.00 GB
+2026-01-22 17:27:04.360 | INFO     | __main__:run_experiment:37 - [3/4] Preparando prompts...
+2026-01-22 17:27:04.360 | INFO     | __main__:run_experiment:48 - [4/4] Executando inferência...
+2026-01-23 15:52:21.541 | INFO     | models.model_handler:unload:263 - Modelo descarregado da memória.
+2026-01-23 15:52:21.542 | INFO     | __main__:run_experiment:85 - ✅ Concluído! F1-Score: 0.2901
+2026-01-23 15:52:21.774 | INFO     | __main__:<module>:30 - [Experimento 8/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakerecogna
+2026-01-23 15:52:21.774 | INFO     | __main__:<module>:34 - [Experimento 8/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakerecogna
+2026-01-23 15:52:21.775 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | zero_shot | fakerecogna
+2026-01-23 15:52:21.775 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-23 15:52:21.775 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: FakeRecogna
+2026-01-23 15:52:27.163 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 52800 amostras
+2026-01-23 15:52:27.177 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-23 15:52:27.177 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-23 15:52:27.178 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-23 15:52:41.025 | INFO     | models.model_handler:_load_model:148 - Modelo carregado com sucesso!
+2026-01-23 15:52:41.026 | INFO     | __main__:run_experiment:34 -       VRAM: 0.00 GB
+2026-01-23 15:52:41.026 | INFO     | __main__:run_experiment:37 - [3/4] Preparando prompts...
+2026-01-23 15:52:41.026 | INFO     | __main__:run_experiment:48 - [4/4] Executando inferência...
+2026-01-23 15:52:52.987 | ERROR    | __main__:run_experiment:90 - ❌ ERRO: The size of tensor a (260) must match the size of tensor b (262208) at non-singleton dimension 1
+2026-01-23 15:52:53.173 | INFO     | __main__:<module>:30 - [Experimento 9/12] Re-executando (erro anterior): CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakebr
+2026-01-23 15:52:53.173 | INFO     | __main__:<module>:34 - [Experimento 9/12] Executando: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakebr
+2026-01-23 15:52:53.174 | INFO     | __main__:run_experiment:21 - Experimento: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it | few_shot | fakebr
+2026-01-23 15:52:53.174 | INFO     | __main__:run_experiment:25 - [1/4] Carregando dataset...
+2026-01-23 15:52:53.176 | INFO     | data.data_loader:load_dataset:32 - Carregando dataset: Fake.Br Corpus
+2026-01-23 15:52:54.543 | INFO     | data.data_loader:load_dataset:45 - Dataset carregado: 7200 amostras
+2026-01-23 15:52:54.560 | INFO     | __main__:run_experiment:28 -       Amostras: 1000
+2026-01-23 15:52:54.560 | INFO     | __main__:run_experiment:31 - [2/4] Carregando modelo...
+2026-01-23 15:52:54.561 | INFO     | models.model_handler:_load_model:50 - Carregando modelo: CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
+2026-01-23 15:53:08.085 | INFO     | models.model_handler:_load_model:148 - Modelo carregado com sucesso!
+2026-01-23 15:53:08.086 | INFO     | __main__:run_experiment:34 -       VRAM: 0.00 GB
+2026-01-23 15:53:08.086 | INFO     | __main__:run_experiment:37 - [3/4] Preparando prompts...
+2026-01-23 15:53:08.108 | INFO     | __main__:run_experiment:48 - [4/4] Executando inferência...

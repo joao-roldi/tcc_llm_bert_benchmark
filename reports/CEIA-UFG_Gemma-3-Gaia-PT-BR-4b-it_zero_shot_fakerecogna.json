@@ -1,0 +1,6 @@
+{
+  "model": "CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it",
+  "strategy": "zero_shot",
+  "dataset": "fakerecogna",
+  "error": "The size of tensor a (260) must match the size of tensor b (262208) at non-singleton dimension 1"
+}

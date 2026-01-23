@@ -1,0 +1,6 @@
+{
+  "model": "CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it",
+  "strategy": "chain_of_thought",
+  "dataset": "fakebr",
+  "error": "Invalid buffer size: 12.50 GiB"
+}

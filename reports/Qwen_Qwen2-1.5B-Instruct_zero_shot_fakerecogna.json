@@ -1,0 +1,35 @@
+{
+  "model": "Qwen/Qwen2-1.5B-Instruct",
+  "strategy": "zero_shot",
+  "dataset": "fakerecogna",
+  "sample_size": 1000,
+  "timestamp": "2026-01-21T16:13:07.930562",
+  "metrics": {
+    "accuracy": 0.52,
+    "precision": 0.5138888888888888,
+    "recall": 0.74,
+    "f1_score": 0.6065573770491803,
+    "precision_macro": 0.5248015873015872,
+    "recall_macro": 0.52,
+    "f1_macro": 0.49558638083228246,
+    "invalid_predictions": 0,
+    "invalid_rate": 0.0,
+    "confusion_matrix": [
+      [
+        150,
+        350
+      ],
+      [
+        130,
+        370
+      ]
+    ],
+    "true_negatives": 150,
+    "false_positives": 350,
+    "false_negatives": 130,
+    "true_positives": 370,
+    "avg_inference_time": 10.102063570737839,
+    "total_inference_time": 10102.063570737839,
+    "vram_usage_gb": 0.0
+  }
+}

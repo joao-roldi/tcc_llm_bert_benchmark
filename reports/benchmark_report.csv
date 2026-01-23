@@ -1,0 +1,13 @@
+model,strategy,dataset,accuracy,precision,recall,f1_score,avg_inference_time,vram_usage_gb,invalid_rate,error
+Qwen/Qwen2-1.5B-Instruct,zero_shot,fakebr,0.507,0.5069306930693069,0.512,0.5094527363184079,11.957698138952255,0.0,0.0,
+Qwen/Qwen2-1.5B-Instruct,zero_shot,fakerecogna,0.52,0.5138888888888888,0.74,0.6065573770491803,10.102063570737839,0.0,0.0,
+Qwen/Qwen2-1.5B-Instruct,few_shot,fakebr,0.504,0.5036231884057971,0.556,0.5285171102661597,23.414957962989806,0.0,0.0,
+Qwen/Qwen2-1.5B-Instruct,few_shot,fakerecogna,0.531,0.5162303664921466,0.986,0.6776632302405499,16.240840139865874,0.0,0.0,
+Qwen/Qwen2-1.5B-Instruct,chain_of_thought,fakebr,0.504,0.5039840637450199,0.506,0.5049900199600799,14.120021619319916,0.0,0.0,
+Qwen/Qwen2-1.5B-Instruct,chain_of_thought,fakerecogna,0.48,0.48579545454545453,0.684,0.5681063122923588,11.602594329357148,0.0,0.0,
+CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it,zero_shot,fakebr,,,,,,,,"probability tensor contains either `inf`, `nan` or element < 0"
+CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it,zero_shot,fakerecogna,,,,,,,,"probability tensor contains either `inf`, `nan` or element < 0"
+CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it,few_shot,fakebr,,,,,,,,"probability tensor contains either `inf`, `nan` or element < 0"
+CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it,few_shot,fakerecogna,,,,,,,,"probability tensor contains either `inf`, `nan` or element < 0"
+CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it,chain_of_thought,fakebr,,,,,,,,"probability tensor contains either `inf`, `nan` or element < 0"
+CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it,chain_of_thought,fakerecogna,,,,,,,,"probability tensor contains either `inf`, `nan` or element < 0"
