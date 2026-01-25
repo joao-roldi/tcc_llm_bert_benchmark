@@ -1,0 +1,6 @@
+{
+  "model": "Qwen/Qwen2-7B-Instruct",
+  "strategy": "few_shot",
+  "dataset": "fakerecogna",
+  "error": "Modelo 'Qwen/Qwen2-7B-Instruct' n\u00e3o encontrado no mapeamento OLLAMA_MODEL_MAPPING. Adicione o mapeamento em config.py ou forne\u00e7a 'ollama_model' explicitamente."
+}

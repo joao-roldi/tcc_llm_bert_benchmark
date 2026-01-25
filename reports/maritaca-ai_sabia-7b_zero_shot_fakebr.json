@@ -1,0 +1,35 @@
+{
+  "model": "maritaca-ai/sabia-7b",
+  "strategy": "zero_shot",
+  "dataset": "fakebr",
+  "sample_size": 1000,
+  "timestamp": "2026-01-24T18:49:14.040978",
+  "metrics": {
+    "accuracy": 0.193,
+    "precision": 0.26564885496183205,
+    "recall": 0.348,
+    "f1_score": 0.3012987012987013,
+    "precision_macro": 0.16036065936497398,
+    "recall_macro": 0.19299999999999998,
+    "f1_macro": 0.17313455774994235,
+    "invalid_predictions": 444,
+    "invalid_rate": 0.444,
+    "confusion_matrix": [
+      [
+        19,
+        481
+      ],
+      [
+        326,
+        174
+      ]
+    ],
+    "true_negatives": 19,
+    "false_positives": 481,
+    "false_negatives": 326,
+    "true_positives": 174,
+    "avg_inference_time": 2.7192057929039,
+    "total_inference_time": 2719.2057929039,
+    "vram_usage_gb": 2.0
+  }
+}

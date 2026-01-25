@@ -1,13 +1,21 @@
 model,strategy,dataset,accuracy,precision,recall,f1_score,avg_inference_time,vram_usage_gb,invalid_rate,error
-Qwen/Qwen2-1.5B-Instruct,zero_shot,fakebr,0.507,0.5069306930693069,0.512,0.5094527363184079,11.957698138952255,0.0,0.0,
-Qwen/Qwen2-1.5B-Instruct,zero_shot,fakerecogna,0.52,0.5138888888888888,0.74,0.6065573770491803,10.102063570737839,0.0,0.0,
-Qwen/Qwen2-1.5B-Instruct,few_shot,fakebr,0.504,0.5036231884057971,0.556,0.5285171102661597,23.414957962989806,0.0,0.0,
-Qwen/Qwen2-1.5B-Instruct,few_shot,fakerecogna,0.531,0.5162303664921466,0.986,0.6776632302405499,16.240840139865874,0.0,0.0,
+Qwen/Qwen2-7B-Instruct,zero_shot,fakerecogna,0.788,0.9186046511627907,0.632,0.7488151658767772,0.6195612812042236,2.0,0.0,
+maritaca-ai/sabia-7b,zero_shot,fakebr,0.193,0.26564885496183205,0.348,0.3012987012987013,2.7192057929039,2.0,0.444,
+maritaca-ai/sabia-7b,chain_of_thought,fakebr,0.0,0.0,0.0,0.0,2.626837874889374,2.0,1.0,
+maritaca-ai/sabia-7b,few_shot,fakebr,0.505,0.5308641975308642,0.086,0.14802065404475043,3.295739350795746,2.0,0.0,
+CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it,zero_shot,fakebr,0.442,0.3986013986013986,0.228,0.2900763358778626,80.71051804423332,0.0,0.002,
 Qwen/Qwen2-1.5B-Instruct,chain_of_thought,fakebr,0.504,0.5039840637450199,0.506,0.5049900199600799,14.120021619319916,0.0,0.0,
+maritaca-ai/sabia-7b,chain_of_thought,fakerecogna,0.001,0.001996007984031936,0.002,0.001998001998001998,1.7434359695911408,2.0,0.998,
+CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it,few_shot,fakebr,0.459,0.15254237288135594,0.018,0.03220035778175313,2.567389955043793,2.0,0.0,
 Qwen/Qwen2-1.5B-Instruct,chain_of_thought,fakerecogna,0.48,0.48579545454545453,0.684,0.5681063122923588,11.602594329357148,0.0,0.0,
-CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it,zero_shot,fakebr,,,,,,,,"probability tensor contains either `inf`, `nan` or element < 0"
-CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it,zero_shot,fakerecogna,,,,,,,,"probability tensor contains either `inf`, `nan` or element < 0"
-CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it,few_shot,fakebr,,,,,,,,"probability tensor contains either `inf`, `nan` or element < 0"
-CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it,few_shot,fakerecogna,,,,,,,,"probability tensor contains either `inf`, `nan` or element < 0"
-CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it,chain_of_thought,fakebr,,,,,,,,"probability tensor contains either `inf`, `nan` or element < 0"
-CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it,chain_of_thought,fakerecogna,,,,,,,,"probability tensor contains either `inf`, `nan` or element < 0"
+Qwen/Qwen2-1.5B-Instruct,few_shot,fakerecogna,0.531,0.5162303664921466,0.986,0.6776632302405499,16.240840139865874,0.0,0.0,
+maritaca-ai/sabia-7b,few_shot,fakerecogna,0.474,0.47818791946308725,0.57,0.5200729927007299,7.271712597608566,2.0,0.001,
+CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it,chain_of_thought,fakebr,0.397,0.3589041095890411,0.262,0.30289017341040464,4.8898426105976105,2.0,0.0,
+Qwen/Qwen2-7B-Instruct,zero_shot,fakebr,0.4,0.08333333333333333,0.02,0.03225806451612903,1.3440023593902588,2.0,0.0,
+CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it,chain_of_thought,fakerecogna,0.677,0.6363636363636364,0.826,0.7188859878154917,3.8769989361763,2.0,0.0,
+maritaca-ai/sabia-7b,zero_shot,fakerecogna,0.38,0.4318181818181818,0.76,0.5507246376811594,2.2025243918895723,2.0,0.244,
+Qwen/Qwen2-1.5B-Instruct,few_shot,fakebr,0.504,0.5036231884057971,0.556,0.5285171102661597,23.414957962989806,0.0,0.0,
+Qwen/Qwen2-1.5B-Instruct,zero_shot,fakebr,0.507,0.5069306930693069,0.512,0.5094527363184079,11.957698138952255,0.0,0.0,
+CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it,zero_shot,fakerecogna,0.724,0.9590163934426229,0.468,0.6290322580645161,14.961662343025207,2.0,0.0,
+CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it,few_shot,fakerecogna,0.62,0.9838709677419355,0.244,0.391025641025641,1.873351984500885,2.0,0.0,
+Qwen/Qwen2-1.5B-Instruct,zero_shot,fakerecogna,0.52,0.5138888888888888,0.74,0.6065573770491803,10.102063570737839,0.0,0.0,

@@ -2,5 +2,34 @@
   "model": "CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it",
   "strategy": "zero_shot",
   "dataset": "fakerecogna",
-  "error": "The size of tensor a (260) must match the size of tensor b (262208) at non-singleton dimension 1"
+  "sample_size": 1000,
+  "timestamp": "2026-01-23T22:15:53.712838",
+  "metrics": {
+    "accuracy": 0.724,
+    "precision": 0.9590163934426229,
+    "recall": 0.468,
+    "f1_score": 0.6290322580645161,
+    "precision_macro": 0.8035822707953855,
+    "recall_macro": 0.724,
+    "f1_macro": 0.7046435175672899,
+    "invalid_predictions": 0,
+    "invalid_rate": 0.0,
+    "confusion_matrix": [
+      [
+        490,
+        10
+      ],
+      [
+        266,
+        234
+      ]
+    ],
+    "true_negatives": 490,
+    "false_positives": 10,
+    "false_negatives": 266,
+    "true_positives": 234,
+    "avg_inference_time": 14.961662343025207,
+    "total_inference_time": 14961.662343025208,
+    "vram_usage_gb": 2.0
+  }
 }

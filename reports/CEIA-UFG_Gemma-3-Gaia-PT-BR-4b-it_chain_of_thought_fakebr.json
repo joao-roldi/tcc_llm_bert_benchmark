@@ -2,5 +2,34 @@
   "model": "CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it",
   "strategy": "chain_of_thought",
   "dataset": "fakebr",
-  "error": "Invalid buffer size: 12.50 GiB"
+  "sample_size": 1000,
+  "timestamp": "2026-01-24T02:24:37.063030",
+  "metrics": {
+    "accuracy": 0.397,
+    "precision": 0.3589041095890411,
+    "recall": 0.262,
+    "f1_score": 0.30289017341040464,
+    "precision_macro": 0.38890087369215837,
+    "recall_macro": 0.397,
+    "f1_macro": 0.3858063201853785,
+    "invalid_predictions": 0,
+    "invalid_rate": 0.0,
+    "confusion_matrix": [
+      [
+        266,
+        234
+      ],
+      [
+        369,
+        131
+      ]
+    ],
+    "true_negatives": 266,
+    "false_positives": 234,
+    "false_negatives": 369,
+    "true_positives": 131,
+    "avg_inference_time": 4.8898426105976105,
+    "total_inference_time": 4889.8426105976105,
+    "vram_usage_gb": 2.0
+  }
 }

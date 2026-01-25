@@ -2,5 +2,34 @@
   "model": "CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it",
   "strategy": "few_shot",
   "dataset": "fakerecogna",
-  "error": "Invalid buffer size: 12.50 GiB"
+  "sample_size": 1000,
+  "timestamp": "2026-01-24T01:03:04.539474",
+  "metrics": {
+    "accuracy": 0.62,
+    "precision": 0.9838709677419355,
+    "recall": 0.244,
+    "f1_score": 0.391025641025641,
+    "precision_macro": 0.7761820592134335,
+    "recall_macro": 0.62,
+    "f1_macro": 0.5574314251639833,
+    "invalid_predictions": 0,
+    "invalid_rate": 0.0,
+    "confusion_matrix": [
+      [
+        498,
+        2
+      ],
+      [
+        378,
+        122
+      ]
+    ],
+    "true_negatives": 498,
+    "false_positives": 2,
+    "false_negatives": 378,
+    "true_positives": 122,
+    "avg_inference_time": 1.873351984500885,
+    "total_inference_time": 1873.351984500885,
+    "vram_usage_gb": 2.0
+  }
 }

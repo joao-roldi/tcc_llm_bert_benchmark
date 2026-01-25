@@ -1,0 +1,35 @@
+{
+  "model": "maritaca-ai/sabia-7b",
+  "strategy": "chain_of_thought",
+  "dataset": "fakerecogna",
+  "sample_size": 1000,
+  "timestamp": "2026-01-24T23:35:12.415107",
+  "metrics": {
+    "accuracy": 0.001,
+    "precision": 0.001996007984031936,
+    "recall": 0.002,
+    "f1_score": 0.001998001998001998,
+    "precision_macro": 0.000998003992015968,
+    "recall_macro": 0.001,
+    "f1_macro": 0.000999000999000999,
+    "invalid_predictions": 998,
+    "invalid_rate": 0.998,
+    "confusion_matrix": [
+      [
+        0,
+        500
+      ],
+      [
+        499,
+        1
+      ]
+    ],
+    "true_negatives": 0,
+    "false_positives": 500,
+    "false_negatives": 499,
+    "true_positives": 1,
+    "avg_inference_time": 1.7434359695911408,
+    "total_inference_time": 1743.4359695911407,
+    "vram_usage_gb": 2.0
+  }
+}
