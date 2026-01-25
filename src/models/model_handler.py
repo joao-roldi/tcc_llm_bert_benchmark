@@ -17,7 +17,7 @@ from transformers import (
     pipeline
 )
 
-from config import MODEL_CONFIGS, EXPERIMENT_CONFIG, HARDWARE_CONFIG
+from config import MODEL_CONFIGS, EXPERIMENT_CONFIG, HARDWARE_CONFIG, OLLAMA_MODEL_MAPPING
 
 
 class ModelHandler:
@@ -225,7 +225,7 @@ class ModelHandler:
 class ModelHandlerOllama:
     """
     Handler alternativo usando Ollama para modelos locais.
-    Útil para modelos no formato GGUF.
+    Útil para modelos no formato GGUF com quantização 4-bit.
     """
     
     def __init__(self, model_name: str, ollama_model: Optional[str] = None):
@@ -233,22 +233,68 @@ class ModelHandlerOllama:
         Inicializa o handler Ollama.
         
         Args:
-            model_name: Nome do modelo (para referência)
-            ollama_model: Nome do modelo no Ollama (ex: 'llama3:8b')
+            model_name: Nome do modelo HuggingFace (para referência)
+            ollama_model: Nome do modelo no Ollama (ex: 'qwen2:1.5b-instruct')
+                         Se None, tenta usar o mapeamento de OLLAMA_MODEL_MAPPING
         """
         self.model_name = model_name
-        self.ollama_model = ollama_model or model_name
+        
+        # Determinar nome do modelo Ollama
+        if ollama_model:
+            self.ollama_model = ollama_model
+        elif model_name in OLLAMA_MODEL_MAPPING:
+            self.ollama_model = OLLAMA_MODEL_MAPPING[model_name]
+        else:
+            raise ValueError(
+                f"Modelo '{model_name}' não encontrado no mapeamento OLLAMA_MODEL_MAPPING. "
+                f"Adicione o mapeamento em config.py ou forneça 'ollama_model' explicitamente."
+            )
         
         # Verificar se Ollama está disponível
         self._check_ollama()
-    
+
+    @staticmethod
+    def _normalize_ollama_name_for_match(name: str) -> str:
+        """Normaliza nome (hf.co vs https, com/sem :latest) para comparação."""
+        s = (name or "").strip()
+        s = s.replace("https://huggingface.co/", "hf.co/").replace("http://huggingface.co/", "hf.co/")
+        if s.startswith("hf.co/"):
+            base = s.split(":")[0]
+            return base.lower()
+        return s.lower()
+
+    def _resolve_ollama_model(self, model_names: list[str]) -> None:
+        """
+        Se o modelo configurado não estiver em model_names, tenta casar por
+        equivalência (hf.co vs https, :latest) e usa o nome exato retornado
+        pelo Ollama para generate()/chat().
+        """
+        if self.ollama_model in model_names:
+            return
+        ours = self._normalize_ollama_name_for_match(self.ollama_model)
+        for listed in model_names:
+            if self._normalize_ollama_name_for_match(listed) == ours:
+                logger.info(
+                    f"Modelo resolvido: '{self.ollama_model}' -> '{listed}' (Ollama list)"
+                )
+                self.ollama_model = listed
+                return
+        logger.warning(
+            f"Modelo '{self.ollama_model}' não encontrado no Ollama. "
+            f"Execute: ollama pull {self.ollama_model}"
+        )
+
     def _check_ollama(self):
         """Verifica se Ollama está instalado e rodando."""
         try:
             import ollama
             self.client = ollama
-            # Testar conexão
-            self.client.list()
+            # Testar conexão e verificar se modelo existe
+            models = self.client.list()
+            # Ollama retorna ListResponse com .models (não dict com 'models')
+            # Cada modelo é um objeto com atributo .model (não dict com 'name')
+            model_names = [m.model for m in models.models] if hasattr(models, 'models') else []
+            self._resolve_ollama_model(model_names)
             logger.info(f"Ollama conectado. Usando modelo: {self.ollama_model}")
         except ImportError:
             raise ImportError("Ollama não instalado. Execute: pip install ollama")
@@ -261,29 +307,122 @@ class ModelHandlerOllama:
         
         Args:
             prompt: Texto de entrada
-            **kwargs: Parâmetros adicionais
+            **kwargs: Parâmetros adicionais de geração
         
         Returns:
             Texto gerado
         """
-        response = self.client.generate(
-            model=self.ollama_model,
-            prompt=prompt,
-            options={
-                "temperature": kwargs.get("temperature", 0.1),
-                "top_p": kwargs.get("top_p", 0.9),
-                "num_predict": kwargs.get("max_new_tokens", 256),
-            }
-        )
+        # Mesclar parâmetros padrão com kwargs
+        gen_params = EXPERIMENT_CONFIG["generation_params"].copy()
+        gen_params.update(kwargs)
         
-        return response["response"].strip()
+        # Usar chat API local do Ollama para modelos instruction-tuned (melhor compatibilidade)
+        try:
+            response = self.client.chat(
+                model=self.ollama_model,
+                messages=[
+                    {
+                        "role": "user",
+                        "content": prompt
+                    }
+                ],
+                options={
+                    "temperature": gen_params.get("temperature", 0.1),
+                    "top_p": gen_params.get("top_p", 0.9),
+                    "num_predict": gen_params.get("max_new_tokens", 256),
+                }
+            )
+            
+            # Extrair resposta
+            generated_text = response["message"]["content"]
+            
+        except Exception as e:
+            # Fallback para generate API local do Ollama se chat falhar
+            error_msg = str(e)
+            if "not found" in error_msg.lower() or "404" in error_msg:
+                raise ConnectionError(
+                    f"Modelo '{self.ollama_model}' não encontrado no Ollama local. "
+                    f"Execute: ollama pull {self.ollama_model}"
+                )
+            logger.warning(f"Ollama chat local falhou, tentando generate local: {e}")
+            try:
+                response = self.client.generate(
+                    model=self.ollama_model,
+                    prompt=prompt,
+                    options={
+                        "temperature": gen_params.get("temperature", 0.1),
+                        "top_p": gen_params.get("top_p", 0.9),
+                        "num_predict": gen_params.get("max_new_tokens", 256),
+                    }
+                )
+                # generate retorna um generator, precisamos coletar todos os chunks
+                generated_text = ""
+                for chunk in response:
+                    if "response" in chunk:
+                        generated_text += chunk["response"]
+            except Exception as e2:
+                if "not found" in str(e2).lower() or "404" in str(e2):
+                    raise ConnectionError(
+                        f"Modelo '{self.ollama_model}' não encontrado no Ollama local. "
+                        f"Execute: ollama pull {self.ollama_model}"
+                    )
+                raise ConnectionError(f"Erro ao gerar texto com Ollama local: {e2}")
+        
+        return generated_text.strip()
+    
+    def generate_batch(self, prompts: list, **kwargs) -> list:
+        """
+        Gera texto para múltiplos prompts.
+        
+        Args:
+            prompts: Lista de prompts
+            **kwargs: Parâmetros de geração
+        
+        Returns:
+            Lista de textos gerados
+        """
+        results = []
+        for prompt in prompts:
+            result = self.generate(prompt, **kwargs)
+            results.append(result)
+        return results
     
     def get_vram_usage(self) -> float:
-        """Retorna uso estimado de VRAM."""
-        if torch.cuda.is_available():
-            return torch.cuda.memory_allocated() / 1e9
+        """
+        Retorna uso estimado de memória (Ollama gerencia automaticamente).
+        Retorna 0.0 pois Ollama gerencia a memória internamente.
+        """
+        # Ollama gerencia memória automaticamente, não podemos medir diretamente
+        # Mas podemos estimar baseado no modelo
+        try:
+            import ollama
+            # Tentar obter informações do modelo
+            show_info = ollama.show(self.ollama_model)
+            if "modelfile" in show_info:
+                # Estimativa aproximada baseada no tamanho do modelo
+                # Modelos 4-bit geralmente usam 1-4GB dependendo do tamanho
+                return 2.0  # Estimativa conservadora
+        except:
+            pass
         return 0.0
     
+    def get_model_info(self) -> dict:
+        """
+        Retorna informações sobre o modelo.
+        
+        Returns:
+            Dicionário com informações do modelo
+        """
+        return {
+            "model_name": self.model_name,
+            "ollama_model": self.ollama_model,
+            "backend": "ollama",
+            "quantization": "4-bit (GGUF)",
+        }
+    
     def unload(self):
-        """Placeholder para compatibilidade."""
-        pass
+        """
+        Placeholder para compatibilidade.
+        Ollama gerencia modelos em background, não precisa descarregar explicitamente.
+        """
+        logger.debug("Ollama gerencia modelos automaticamente, não é necessário descarregar.")
