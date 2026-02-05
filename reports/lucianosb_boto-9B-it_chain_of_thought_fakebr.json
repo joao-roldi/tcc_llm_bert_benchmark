@@ -1,0 +1,6 @@
+{
+  "model": "lucianosb/boto-9B-it",
+  "strategy": "chain_of_thought",
+  "dataset": "fakebr",
+  "error": "Modelo 'lucianosb/boto-9B-it' n\u00e3o encontrado no mapeamento OLLAMA_MODEL_MAPPING. Adicione o mapeamento em config.py ou forne\u00e7a 'ollama_model' explicitamente."
+}

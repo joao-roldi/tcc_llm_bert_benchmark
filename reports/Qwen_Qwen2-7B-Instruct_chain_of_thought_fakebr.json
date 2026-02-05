@@ -2,5 +2,34 @@
   "model": "Qwen/Qwen2-7B-Instruct",
   "strategy": "chain_of_thought",
   "dataset": "fakebr",
-  "error": "Modelo 'Qwen/Qwen2-7B-Instruct' n\u00e3o encontrado no mapeamento OLLAMA_MODEL_MAPPING. Adicione o mapeamento em config.py ou forne\u00e7a 'ollama_model' explicitamente."
+  "sample_size": 1000,
+  "timestamp": "2026-01-25T12:18:39.096489",
+  "metrics": {
+    "accuracy": 0.482,
+    "precision": 0.4828897338403042,
+    "recall": 0.508,
+    "f1_score": 0.4951267056530214,
+    "precision_macro": 0.48195119603407616,
+    "recall_macro": 0.482,
+    "f1_macro": 0.48164959512630534,
+    "invalid_predictions": 0,
+    "invalid_rate": 0.0,
+    "confusion_matrix": [
+      [
+        228,
+        272
+      ],
+      [
+        246,
+        254
+      ]
+    ],
+    "true_negatives": 228,
+    "false_positives": 272,
+    "false_negatives": 246,
+    "true_positives": 254,
+    "avg_inference_time": 4.222504698753357,
+    "total_inference_time": 4222.504698753357,
+    "vram_usage_gb": 2.0
+  }
 }

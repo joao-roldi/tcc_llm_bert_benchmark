@@ -1,0 +1,46 @@
+{
+  "model": "neuralmind/bert-base-portuguese-cased",
+  "strategy": "fine_tuned",
+  "dataset": "fakebr",
+  "sample_size": 1000,
+  "timestamp": "2026-01-26T11:43:44.998399",
+  "metrics": {
+    "accuracy": 0.998,
+    "precision": 0.998,
+    "recall": 0.998,
+    "f1_score": 0.998,
+    "precision_macro": 0.998,
+    "recall_macro": 0.998,
+    "f1_macro": 0.998,
+    "invalid_predictions": 0,
+    "invalid_rate": 0.0,
+    "confusion_matrix": [
+      [
+        499,
+        1
+      ],
+      [
+        1,
+        499
+      ]
+    ],
+    "true_negatives": 499,
+    "false_positives": 1,
+    "false_negatives": 1,
+    "true_positives": 499,
+    "avg_inference_time": 0.028966356992721556,
+    "total_inference_time": 28.966356992721558,
+    "training_time": 3085.659708738327
+  },
+  "training_config": {
+    "num_epochs": 3,
+    "batch_size": 8,
+    "eval_batch_size": 16,
+    "max_length": 512,
+    "warmup_steps": 500,
+    "weight_decay": 0.01,
+    "learning_rate": 2e-05,
+    "seed": 42,
+    "test_size": 0.2
+  }
+}

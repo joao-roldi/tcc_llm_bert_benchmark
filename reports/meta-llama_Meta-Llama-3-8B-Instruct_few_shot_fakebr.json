@@ -1,0 +1,35 @@
+{
+  "model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "strategy": "few_shot",
+  "dataset": "fakebr",
+  "sample_size": 1000,
+  "timestamp": "2026-01-25T22:50:50.632872",
+  "metrics": {
+    "accuracy": 0.229,
+    "precision": 0.06984126984126984,
+    "recall": 0.044,
+    "f1_score": 0.053987730061349694,
+    "precision_macro": 0.18601552543158384,
+    "recall_macro": 0.22899999999999998,
+    "f1_macro": 0.2016774093344723,
+    "invalid_predictions": 0,
+    "invalid_rate": 0.0,
+    "confusion_matrix": [
+      [
+        207,
+        293
+      ],
+      [
+        478,
+        22
+      ]
+    ],
+    "true_negatives": 207,
+    "false_positives": 293,
+    "false_negatives": 478,
+    "true_positives": 22,
+    "avg_inference_time": 1.5276067457199096,
+    "total_inference_time": 1527.6067457199097,
+    "vram_usage_gb": 2.0
+  }
+}
