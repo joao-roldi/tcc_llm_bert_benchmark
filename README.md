@@ -187,7 +187,7 @@ Se utilizar este código em sua pesquisa, por favor cite:
   title = {LLM Benchmark para Detecção de Fake News em Português},
   year = {2026},
   publisher = {GitHub},
-  url = {https://github.com/seu-usuario/tcc2}
+  url = {https://github.com/joao-roldi/tcc_llm_bert_benchmark}
 }
 ```
 
