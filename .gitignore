@@ -16,3 +16,5 @@ data/*
 # Logs
 *.log
 reports/logs/*
+
+notebooks/results/*
