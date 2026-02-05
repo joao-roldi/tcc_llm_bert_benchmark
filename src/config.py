@@ -68,8 +68,7 @@ OLLAMA_MODEL_MAPPING = {
     "CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it": "brunoconterato/Gemma-3-Gaia-PT-BR-4b-it:f16",
     "maritaca-ai/sabia-7b": "hf.co/TheBloke/sabia-7B-GGUF:latest",
     "Qwen/Qwen2-7B-Instruct": "qwen2:7b-instruct",
-    # "meta-llama/Meta-Llama-3-8B-Instruct": "llama3:8b-instruct",
-    # "lucianosb/boto-9B-it": "boto:9b",  # Se disponível no Ollama
+    "meta-llama/Meta-Llama-3-8B-Instruct": "llama3:8b-instruct-q8_0",
 }
 
 # =============================================================================
